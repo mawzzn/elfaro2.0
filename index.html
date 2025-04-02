@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>    
+    <div id="header">
+        <div class="header-container">
+        <img src="images/faro.png" alt="Logo de El Faro" class="logo">
+        <h1>El Faro</h1>
+    </div>
+        </div>
+    <nav>
+        <ul>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="deportes.html">Deportes</a>
+            <a href="negocios.html">Negocios</a>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <!-- Publicidad izquierda -->
+        <aside class="sidebar left-ad">
+            <p>Publicidad</p>
+            <img src="images/Logo_Redondo.png" alt="Publicidad Izquierda">
+        </aside>
+    <!-- Carga dinámica con AJAX -->    
+    <div id="contenido">
+        <section>
+            <div class="welcome-container">
+                <h2>Bienvenido a El Faro</h2>
+                <p>El mejor portal de noticias generales, deportes y negocios.</p>
+                <h3>Últimas Noticias</h3>
+           </div>
+        
+            <center><table id="newsTable">
+                <tr>
+                    <th>Título</th>
+                    <th>Categoría</th>
+                    <th>Artículo</th>
+                </tr>
+                <tr class="collapsible" onclick="toggleAccordion(this)">
+                    <td><strong>Avances en la tecnología 5G: ¿Qué esperar?</strong></td>
+                    <td><strong>Tecnología</strong></td>
+                    <td>La tecnología 5G está transformando la forma en que nos conectamos. Conoce los últimos avances y cómo cambiarán las comunicaciones.</td>
+                </tr>
+                <tr class="content">
+                    <td colspan="3">El despliegue global de la red 5G está generando grandes expectativas en diversos sectores como la salud, educación, entretenimiento y más. Descubre cómo esta tecnología mejorará la velocidad de conexión y reducirá la latencia en internet.</td>
+                </tr>
+                <tr class="collapsible" onclick="toggleAccordion(this)">
+                    <td><strong>El impacto del cambio climático en la agricultura</strong></td>
+                    <td><strong>Agricultura</strong></td>
+                    <td>El cambio climático está afectando a las cosechas globales. ¿Qué medidas se están tomando para mitigar los efectos en la producción de alimentos?</td>
+                </tr>
+                <tr class="content">
+                    <td colspan="3">Diversos estudios han mostrado cómo el aumento de las temperaturas y las alteraciones climáticas están modificando los patrones de cultivo. Los expertos recomiendan adoptar nuevas tecnologías y prácticas sostenibles para asegurar el abastecimiento alimentario mundial.</td>
+                </tr>
+                <tr class="collapsible" onclick="toggleAccordion(this)">
+                    <td><strong>Exploración espacial: Nuevas misiones a Marte</strong></td>
+                    <td><strong>Espacio</strong></td>
+                    <td>Las agencias espaciales están planeando nuevas misiones para explorar Marte. ¿Qué descubrimientos podrían cambiar nuestra visión del planeta rojo?</td>
+                </tr>
+                <tr class="content">
+                    <td colspan="3">La NASA y otras agencias están trabajando en proyectos para enviar robots avanzados y, en el futuro, astronautas al planeta Marte. Conoce los objetivos de estas misiones y las tecnologías innovadoras que se emplearán.</td>
+                </tr>
+            </table></center>
+            <!-- Contenedor de Multimedia -->
+            <div class="media-section">
+                <h3>Contenido Destacado</h3>
+                <div class="media-container">
+                    <div class="media-item">
+                        <video width="320" controls>
+                           <source src="media/Video.mp4" type="video/mp4">
+                            Tu navegador no soporta el video.
+                        </video>
+                    </div>
+                    <div class="media-item">
+                        <audio controls>
+                            <source src="media/audio.mp3" type="audio/mp3">
+                            Tu navegador no soporta el audio.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+       <!-- Publicidad derecha -->
+       <aside class="sidebar right-ad">
+        <p>Publicidad</p>
+        <img src="images/Logo_Redondo.png" alt="Publicidad Derecha">
+    </aside>
+</div>       
+    <!-- Carga dinámica con AJAX -->    
+    <center><nav><a>&copy; 2025 El Faro - Todos los derechos reservados</a></nav> </center>
+    </body>
+</html>

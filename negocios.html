@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>    
+    <div id="header">
+        <div class="header-container">
+        <img src="images/faro.png" alt="Logo de El Faro" class="logo">
+        <h1>El Faro</h1>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="deportes.html">Deportes</a>
+            <a href="negocios.html">Negocios</a>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <!-- Publicidad izquierda -->
+        <aside class="sidebar left-ad">
+            <p>Publicidad</p>
+            <img src="images/Logo_Redondo.png" alt="Publicidad Izquierda">
+        </aside>
+    <!-- Carga dinámica con AJAX -->  <section>
+    <div class="welcome-container">
+        <h2>Noticias de Negocios</h2>
+        <p>Últimas tendencias y noticias del mundo empresarial.</p>
+        <h3>Empresas en crecimiento</h3>
+    </div>
+
+    <table id="newsTable">
+        <tr>
+            <th>Título</th>
+            <th>Categoría</th>
+            <th>Artículo</th>
+        </tr>
+        <tr class="collapsible" onclick="toggleAccordion(this)">
+            <td><strong>Sube la bolsa</strong></td>
+            <td><strong>Finanzas</strong></td>
+            <td>Los mercados cerraron al alza con récords históricos...</td>
+        </tr>
+        <tr class="content">
+            <td colspan="3">Más detalles sobre el alza en los mercados financieros.</td>
+        </tr>
+        <tr class="collapsible" onclick="toggleAccordion(this)">
+            <td><strong>Nuevas startups</strong></td>
+            <td><strong>Empresas</strong></td>
+            <td>Un grupo de emprendedores lanza innovaciones tecnológicas...</td>
+        </tr>
+        <tr class="content">
+            <td colspan="3">Detalles sobre las nuevas startups y sus innovaciones.</td>
+        </tr>
+        <tr class="collapsible" onclick="toggleAccordion(this)">
+            <td><strong>Negocios en expansión</strong></td>
+            <td><strong>Internacional</strong></td>
+            <td>Nuevas oportunidades en mercados internacionales...</td>
+        </tr>
+        <tr class="content">
+            <td colspan="3">Más detalles sobre los negocios internacionales que están en expansión.</td>
+        </tr>
+    </table>
+</section>
+<aside class="sidebar right-ad">
+    <p>Publicidad</p>
+    <img src="images/Logo_Redondo.png" alt="Publicidad Derecha">
+</aside>
+</div>       
+<!-- Carga dinámica con AJAX -->    
+    <center><nav><a>&copy; 2025 El Faro - Todos los derechos reservados</a></nav> </center>
+
+
+</body>
+</html>

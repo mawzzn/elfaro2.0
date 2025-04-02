@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>    
+    <div id="header">
+        <div class="header-container">
+        <img src="images/faro.png" alt="Logo de El Faro" class="logo">
+        <h1>El Faro</h1>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="deportes.html">Deportes</a>
+            <a href="negocios.html">Negocios</a>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <!-- Publicidad izquierda -->
+        <aside class="sidebar left-ad">
+            <p>Publicidad</p>
+            <img src="images/Logo_Redondo.png" alt="Publicidad Izquierda">
+        </aside>
+    <!-- Carga dinámica con AJAX -->    
+    <div id="contenido">
+        <section>
+    <div class="welcome-container">
+        <h2>Noticias Deportivas</h2>
+        <p>Las últimas noticias del mundo deportivo.</p>
+        <h3>Deportes más populares</h3>
+    </div>
+
+   
+    <table id="newsTable">
+        <tr>
+            <th>Título</th>
+            <th>Categoría</th>
+            <th>Artículo</th>
+        </tr>
+        <tr class="collapsible" onclick="toggleAccordion(this)">
+            <td><strong>Final de la Champions.</strong></td>
+            <td><strong>Fútbol</strong></td>
+            <td>El desenlace más emocionante del torneo.</td>
+        </tr>
+        <tr class="content">
+            <td colspan="3"><img src="images/futbol.png" alt="Logo" style="width: 20px; height: 20px; vertical-align: middle;">
+                La final tuvo un desenlace emocionante con goles en el último minuto.</td>
+        </tr>
+        <tr class="collapsible" onclick="toggleAccordion(this)">
+            <td><strong>Resultados de la jornada de Baloncesto.</strong></td>
+            <td><strong>Baloncesto</strong></td>
+            <td>Partidos clave y actuaciones destacadas.</td>
+        </tr>
+        <tr class="content">
+            <td colspan="3"><img src="images/jugador.png" alt="Logo" style="width: 20px; height: 20px; vertical-align: middle;">
+                Partidos intensos marcaron la fecha con victorias ajustadas.</td>
+        </tr>
+        <tr class="collapsible" onclick="toggleAccordion(this)">
+            <td><strong>Los nuevos campeones del tenis mundial.</strong></td>
+            <td><strong>Tenis</strong></td>
+            <td>Los mejores jugadores brillaron en la final.</td>
+        </tr>
+        <tr class="content">
+            <td colspan="3"><img src="images/tenis.png" alt="Logo" style="width: 20px; height: 20px; vertical-align: middle;">
+                Los nuevos campeones brillaron en una final llena de emoción.</td>
+        </tr>
+    </table>
+</section>
+</div>
+ <aside class="sidebar right-ad">
+        <p>Publicidad</p>
+        <img src="images/Logo_Redondo.png" alt="Publicidad Derecha">
+    </aside>
+</div>       
+    <!-- Carga dinámica con AJAX -->    
+   
+    <center><nav><a>&copy; 2025 El Faro - Todos los derechos reservados</a></nav> </center>
+
+</body>
+</html>
